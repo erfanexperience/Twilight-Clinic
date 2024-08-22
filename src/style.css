@@ -698,6 +698,14 @@ body {
   list-style: none;
 }
 
+.carousel-heading {
+    --max-width: 1110px;
+    --container-padding: 1rem;
+  
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    margin-inline: auto;
+}
+
 .a11y-slider-container {
   margin-block: var(--size-700);
   margin-inline: var(--size-400);
