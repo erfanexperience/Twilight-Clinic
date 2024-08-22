@@ -441,7 +441,7 @@ body {
 }
 
 
-@media (max-width: 58em) {
+@media (max-width: 64.3em) {
   .primary-navigation {
     display: none;
     position: fixed;
@@ -449,6 +449,7 @@ body {
     inset: 7rem var(--size-400) auto;
     max-width: 85%;
     margin: auto;
+    z-index: 100;
   }
 
   .primary-header[data-overlay]::before {
@@ -487,7 +488,7 @@ body {
     background: transparent;
     border: 0;
     padding: 0.5em;
-    z-index: 10;
+    z-index: 101;
   }
 
   .mobile-nav-toggle .icon-close {
