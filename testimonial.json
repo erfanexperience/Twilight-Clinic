@@ -7,21 +7,24 @@
 
         {
             "id": 1,
-            "heading": "Extraordinary service that I recommend to everyone...",
+            "heading": "hello service that I recommend to everyone...",
             "comment": "Outstanding service from beginning to end! I highly recommend it to anyone looking to improve their sleep quality.",
-            "avatar": "Images/avatar-1.png"
+            "avatar": "Images/avatar-1.png",
+            "rating": "Images/stars.svg"
         },
         {
             "id": 2,
             "heading": "Looking forward to coming back again and getting therapy..",
             "comment": "I can't wait to return for more therapy sessions. The experience was incredibly positive and satisfying.",
-            "avatar": "Images/avatar-2.png"
+            "avatar": "Images/avatar-2.png",
+            "rating": "Images/stars.svg"
         },
         {
             "id": 3,
             "heading": "Best customer service from the very first moment...",
             "comment": "From the very first moment, the customer service was top-notch. I couldn't be more satisfied with the care I received",
-            "avatar": "Images/avatar-3.png"
+            "avatar": "Images/avatar-3.png",
+            "rating": "Images/stars.svg"
         }
     ]
 
