@@ -29,3 +29,34 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
   centerMode: false,
   arrows: false,
 });
+
+
+
+// Testimonial ----------------------------
+
+fetch("testimonial.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const container = document.querySelector(".even-columns-3");
+    const existingCard = document.querySelector(".card");
+
+    function populateCard(cardElement, memberData) {
+      const avatar = cardElement.querySelector("#card-avatar");
+      const heading = cardElement.querySelector("#card-heading");
+      const comment = cardElement.querySelector("#card-comment");
+
+      avatar.src = memberData.avatar;
+      heading.textContent = memberData.heading;
+      comment.textContent = memberData.comment;
+    }
+
+    populateCard(existingCard, data.data[0]);
+
+    for (let i = 1; i < data.data.length; i++) {
+      const newCard = existingCard.cloneNode(true);
+
+      populateCard(newCard, data.data[i]);
+
+      container.appendChild(newCard);
+    }
+  });
