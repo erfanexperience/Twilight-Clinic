@@ -42,10 +42,12 @@ fetch("testimonial.json")
 
     function populateCard(cardElement, memberData) {
       const avatar = cardElement.querySelector("#card-avatar");
+      const rating = cardElement.querySelector("#card-rating");
       const heading = cardElement.querySelector("#card-heading");
       const comment = cardElement.querySelector("#card-comment");
 
       avatar.src = memberData.avatar;
+      rating.src = memberData.rating
       heading.textContent = memberData.heading;
       comment.textContent = memberData.comment;
     }
@@ -60,3 +62,4 @@ fetch("testimonial.json")
       container.appendChild(newCard);
     }
   });
+
